@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Reservation</title>
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <style>
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+    header {
+      font-size: 40px;
+      font-weight: 250;
+    }
+    p {
+      font-size: 25px;
+      font-weight: 200;
+    }
+    select {
+      margin-bottom: 10px;
+    }
+    button {
+      width: 100%;
+      font-size: 25px;
+      margin-bottom: 30px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <header>
+        Survey Questions
+      </header>
+      <hr />
+
+      <!--  -->
+      <form action="" id="personal-info">
+        <h3>About you</h3>
+        <div class="form-group">
+          <label for="name">Name(Required)</label>
+          <input
+            type="name"
+            class="form-control"
+            id="name"
+            placeholder="Please enter your name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="link-img">Link to photo image</label>
+          <input
+            type="link-url"
+            class="form-control"
+            id="link-img"
+            placeholder="Enter url in here"
+          />
+        </div>
+      </form>
+
+      <!-- . -->
+      <form action="" id="survey">
+        <h3>Question 1</h3>
+        <p>Your mind is always buzzing with unexplored ideas and plans.</p>
+        <select class="custom-select custom-select-sm" id="q1">
+          <option selected>Open this select menu</option>
+          <option value="1">1(Strongly Agree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5(Strongly Disagree)</option>
+        </select>
+
+        <h3>Question 2</h3>
+        <p>
+          Generally speaking, you rely more on your experience than your
+          imagination.
+        </p>
+        <select class="custom-select custom-select-sm" id="q2">
+          <option selected>Open this select menu</option>
+          <option value="1">1(Strongly Agree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5(Strongly Disagree)</option>
+        </select>
+
+        <h3>Question 3</h3>
+        <p>
+          You find it easy to stay relaxed and focused even when there is some
+          pressure. .
+        </p>
+        <select class="custom-select custom-select-sm" id="q3">
+          <option selected>Open this select menu</option>
+          <option value="1">1(Strongly Agree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5(Strongly Disagree)</option>
+        </select>
+
+        <h3>Question 4</h3>
+        <p>You rarely do something just out of sheer curiosity.</p>
+        <select class="custom-select custom-select-sm" id="q4">
+          <option selected>Open this select menu</option>
+          <option value="1">1(Strongly Agree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5(Strongly Disagree)</option>
+        </select>
+
+        <h3>Question 5</h3>
+        <p>People can rarely upset you. .</p>
+        <select class="custom-select custom-select-sm" id="q5">
+          <option selected>Open this select menu</option>
+          <option value="1">1(Strongly Agree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5(Strongly Disagree)</option>
+        </select>
+
+        <h3>Question 6</h3>
+        <p>
+          It is often difficult for you to relate to other people’s feelings.
+        </p>
+        <select class="custom-select custom-select-sm" id="q6">
+          <option selected>Open this select menu</option>
+          <option value="1">1(Strongly Agree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5(Strongly Disagree)</option>
+        </select>
+
+        <h3>Question 7</h3>
+        <p>
+          In a discussion, truth should be more important than people’s
+          sensitivities.
+        </p>
+        <select class="custom-select custom-select-sm" id="q7">
+          <option selected>Open this select menu</option>
+          <option value="1">1(Strongly Agree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5(Strongly Disagree)</option>
+        </select>
+
+        <h3>Question 8</h3>
+        <p>You rarely get carried away by fantasies and ideas.</p>
+        <select class="custom-select custom-select-sm" id="q8">
+          <option selected>Open this select menu</option>
+          <option value="1">1(Strongly Agree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5(Strongly Disagree)</option>
+        </select>
+
+        <h3>Question 9</h3>
+        <p>
+          You think that everyone’s views should be respected regardless of
+          whether they are supported by facts or not.
+        </p>
+        <select class="custom-select custom-select-sm" id="q9">
+          <option selected>Open this select menu</option>
+          <option value="1">1(Strongly Agree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5(Strongly Disagree)</option>
+        </select>
+
+        <h3>Question 10</h3>
+        <p>
+          You feel more energetic after spending time with a group of people.
+        </p>
+        <select class="custom-select custom-select-sm" id="q10">
+          <option selected>Open this select menu</option>
+          <option value="1">1(Strongly Agree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5(Strongly Disagree)</option>
+        </select>
+      </form>
+      <button type="button" class="btn btn-primary">Submit</button>
+    </div>
+  </body>
+  <script type="text/javascript">
+    $(".btn-primary").on("click", function(event) {
+      event.preventDefault();
+
+      let name = document.getElementById("name").value;
+      let urlLink = document.getElementById("link-img").value;
+      let scores = [];
+      var fillOut = true;
+
+      if (name === "" || urlLink === "") {
+        alert("Please fill out the personal information");
+      } else {
+        for (let i = 1; i <= 10; i++) {
+          var answer = document.getElementById(`q${i}`);
+          scores[i] = parseInt(answer.options[answer.selectedIndex].value);
+          if (scores[i] === NaN) {
+            fillOut = false;
+          }
+        }
+      }
+      console.log(scores);
+      let personalInfo = {
+        name: name,
+        url: urlLink,
+        scores: scores
+      };
+      console.log(personalInfo);
+      if (fillOut === false) {
+        alert("Please finish all the selection before submission");
+      } else {
+      }
+    });
+  </script>
+</html>
